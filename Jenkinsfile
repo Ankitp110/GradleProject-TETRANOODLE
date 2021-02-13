@@ -10,11 +10,13 @@ pipeline {
 
         stage('build') {
             
-            tools {
-              gradle 'gradle6.8.2'
-            }
+            //tools {
+             // gradle 'gradle6.8.2'
+           // }
+
             steps {
                 script {
+                   sh 'ls -la'
                    sh 'gradle build' //Running our first build
                 }
                 
