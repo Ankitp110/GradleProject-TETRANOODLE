@@ -28,6 +28,7 @@ version = currentVersion
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
+apply plugin: 'java-gradle-plugin'
 
 dependencies {
     testCompile 'junit:junit:4.7'
