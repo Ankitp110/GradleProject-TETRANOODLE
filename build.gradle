@@ -25,6 +25,10 @@ buildscript {
 
 version = currentVersion
 
+apply from: "$rootDir/gradle/integration-test.gradle"
+apply from: "$rootDir/gradle/code-analysis.gradle"
+apply from: "$rootDir/gradle/deploy.gradle"
+
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
