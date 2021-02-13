@@ -8,6 +8,19 @@ pipeline {
             }
         }
 
+        stage('build') {
+            
+            tools {
+              gradle 'gradle6.8.2'
+            }
+            steps {
+                script {
+                   sh 'gradle build' //Running our first build
+                }
+                
+            }
+        }
+
         stage ('Artifactory configuration') {
             steps {
                 rtServer (
