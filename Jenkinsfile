@@ -10,9 +10,9 @@ pipeline {
 
         stage('build') {
             
-            //tools {
-             // gradle 'gradle6.8.2'
-           // }
+               tools {
+               gradle 'gradle6.8.2'
+              }
 
             steps {
                 script {
