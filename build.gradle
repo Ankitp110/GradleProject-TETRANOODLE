@@ -15,7 +15,7 @@ buildscript {
         }
         mavenCentral()
     }
-    dependencies { classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.5.4" }
+    dependencies { classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release" }
 }
 
 repositories {
