@@ -12,7 +12,7 @@ pipeline {
             
                tools {
                gradle 'gradle6.8.2'
-              }
+              }      
 
             steps {
                 script {
