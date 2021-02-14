@@ -30,12 +30,22 @@ publishing {
 artifactory {
     contextUrl = 'http://159.65.145.173:8081/artifactory'
     publish {
-        contextUrl = 'http://159.65.145.173:8081/artifactory'
-        repository {
+        /* repository {
             repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
             username = "${artifactory_user}" // The publisher user name
             password = "${artifactory_password}" // The publisher password
+        } */
+        repositories {
+            ivy {
+             url "http://159.65.145.173:8081/artifactory"
+             credentials {
+                username = "${artifactory_user}"
+                password = "${artifactory_password}"
         }
+    }
+}
+
+
         defaults {
             // Reference to Gradle publications defined in the build script.
             // This is how we tell the Artifactory Plugin which artifacts should be
