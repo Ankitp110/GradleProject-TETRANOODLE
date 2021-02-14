@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                    sh 'ls -la'
-                   sh 'gradlew build' --scan //Running our first build
+                   sh 'gradle build' //Running our first build
                 }
                 
             }
