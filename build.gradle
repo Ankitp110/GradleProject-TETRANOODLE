@@ -7,7 +7,7 @@ apply plugin: 'com.jfrog.artifactory'
 buildscript {
     repositories {
         maven {
-            url 'http://159.65.145.173:8081/artifactory'
+            url 'https://159.65.145.173:8081/artifactory'
             credentials {
                 username = "${artifactory_user}"
                 password = "${artifactory_password}"
@@ -24,7 +24,7 @@ repositories {
 }
 
 artifactory {
-    contextUrl = "http://159.65.145.173:8081/artifactory"
+    contextUrl = "https://159.65.145.173:8081/artifactory"
     publish {
         repository {
             repoKey = 'libs-snapshot-local'
