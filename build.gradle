@@ -30,12 +30,12 @@ publishing {
 artifactory {
     contextUrl = 'http://159.65.145.173:8081/artifactory'
     publish {
-        /* repository {
+        repository {
             repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
             username = "${artifactory_user}" // The publisher user name
             password = "${artifactory_password}" // The publisher password
-        } */
-        repositories {
+        }
+        /* repositories {
             ivy {
              url "http://159.65.145.173:8081/artifactory"
              credentials {
@@ -43,7 +43,7 @@ artifactory {
                 password = "${artifactory_password}"
         }
     }
-}
+} */
 
 
         defaults {
