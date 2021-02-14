@@ -43,7 +43,7 @@ publishing {
     }
 }
 
-artifactory {
+/* artifactory {
     contextUrl = 'http://159.65.145.173:8081/artifactory'
     publish {
         repository {
@@ -62,7 +62,7 @@ artifactory {
             // Publish generated POM files to Artifactory (true by default)
             publishPom = true
         }
-    }
+    } */
     resolve {
         repoKey = 'jcenter'
     }
